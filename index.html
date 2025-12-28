@@ -94,17 +94,6 @@
             }
         }
 
-
-
-
-
-
-
-
-
-
-
-
         :root {
             --bg: #0b0b0d;
             --surface: #0f1114;
@@ -876,8 +865,8 @@
             font-size: 16px;
         }
 
-        /* Delivery Options in Cart */
-        .delivery-options {
+        /* Reference ID Section */
+        .reference-section {
             margin: 20px 0;
             padding: 20px;
             background: rgba(255, 255, 255, 0.015);
@@ -885,7 +874,7 @@
             border: 1px solid rgba(255, 255, 255, 0.03);
         }
 
-        .options-title {
+        .section-title {
             font-family: var(--ff-heading);
             font-size: 18px;
             margin-bottom: 15px;
@@ -895,55 +884,68 @@
             gap: 10px;
         }
 
-        .options-title svg {
+        .section-title svg {
             width: 20px;
             height: 20px;
         }
 
-        .delivery-option-buttons {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 20px;
+        /* Distributor Checkbox Section */
+        .distributor-section {
+            margin: 20px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.015);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.03);
         }
 
-        .option-btn {
-            flex: 1;
-            padding: 12px;
-            border-radius: 8px;
-            background: transparent;
-            border: 2px solid rgba(255, 255, 255, 0.08);
-            color: var(--muted);
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
+        .checkbox-group {
             display: flex;
             align-items: center;
-            justify-content: center;
-            gap: 8px;
+            gap: 12px;
+            margin-bottom: 15px;
+            cursor: pointer;
         }
 
-        .option-btn:hover {
-            border-color: rgba(255, 255, 255, 0.15);
+        .checkbox-input {
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+            border: 2px solid rgba(212, 175, 55, 0.5);
+            background: transparent;
+            cursor: pointer;
+            position: relative;
         }
 
-        .option-btn.active {
-            background: linear-gradient(90deg, rgba(212, 175, 55, 0.1), rgba(255, 204, 102, 0.1));
+        .checkbox-input:checked {
+            background: var(--gold1);
             border-color: var(--gold1);
-            color: var(--gold2);
         }
 
-        .option-btn svg {
-            width: 18px;
-            height: 18px;
+        .checkbox-input:checked::after {
+            content: '✓';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #0b0b0d;
+            font-weight: bold;
+            font-size: 12px;
         }
 
-        /* Delivery Forms */
-        .delivery-form {
+        .checkbox-label {
+            font-weight: 600;
+            color: var(--muted);
+            cursor: pointer;
+        }
+
+        /* Distributor Mobile Input */
+        .distributor-mobile-container {
             display: none;
             animation: fadeIn 0.5s ease;
+            margin-top: 15px;
         }
 
-        .delivery-form.active {
+        .distributor-mobile-container.show {
             display: block;
         }
 
@@ -990,45 +992,6 @@
 
         .form-input::placeholder {
             color: rgba(255, 255, 255, 0.3);
-        }
-
-        /* Customer Details Summary */
-        .customer-details-summary {
-            background: rgba(255, 255, 255, 0.02);
-            border-radius: 8px;
-            padding: 15px;
-            margin: 15px 0;
-            border: 1px solid rgba(255, 255, 255, 0.03);
-            display: none;
-        }
-
-        .customer-details-summary.active {
-            display: block;
-            animation: fadeIn 0.5s ease;
-        }
-
-        .summary-title {
-            font-weight: 600;
-            color: var(--gold2);
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .summary-title svg {
-            width: 18px;
-            height: 18px;
-        }
-
-        .summary-details {
-            font-size: 14px;
-            color: var(--muted);
-            line-height: 1.6;
-        }
-
-        .summary-details div {
-            margin-bottom: 5px;
         }
 
         /* Footer */
@@ -1119,24 +1082,9 @@
         <!-- Cafe Header - Original Style -->
         <div class="cafe-header">
             <img src="logoo.png" alt="Logo" style="width:300px; height:auto;">
-            <div class="cafe-name">Sai</div>
+           <div class="cafe-name">Sai</div>
             <div class="cafe-subtitle">Natural Agro Products </div>
-            <div class="location-info">
-                <!-- <div class="location-text">अस्सल वऱ्हाडी थाट....</div> -->
-                <!-- <div class="address"> कर्तव्य मंगल कार्यालयाच्या मागे व्ही.एम.व्ही.-वलगाव रोड अमरावती</div> -->
-                <!-- <div class="mobile-numbers">Mo no. +91 9156669444</div> -->
-            </div>
-            <!-- <div class="veg-nonveg">
-                <div class="veg">
-                    <span class="symbol"></span>
-                    <span>special Veg</span>
-                </div>
-                <div class="nonveg">
-                    <span class="symbol"></span>
-                    <span></span>
-                </div>
-            </div>
-        </div> -->
+        </div>
 
         <!-- Main Menu -->
         <main class="menu">
@@ -1153,10 +1101,8 @@
                     </div>
 
                     <div class="tabs-scroll">
-
                         <button class="tab active" data-cat="all">All</button>
                         <button class="tab" data-cat="Ghanache Tel">Ghanache Tel</button>
-                    </button>
                     </div>
                 </div>
             </div>
@@ -1207,66 +1153,41 @@
                 <button class="close-cart" id="closeCart">&times;</button>
             </div>
 
-            <!-- Delivery Options -->
-            <div class="delivery-options">
-                <h4 class="options-title">
+            <!-- Reference ID Section -->
+            <div class="reference-section">
+                <h4 class="section-title">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path
-                            d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                        <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
                     </svg>
-                    Select Delivery Type
+                    Reference ID
                 </h4>
+                <div class="form-group">
+                    <input type="text" id="referenceId" class="form-input" placeholder="Enter your reference ID" />
+                </div>
+            </div>
 
-                <div class="delivery-option-buttons">
-                    <button class="option-btn active" id="restaurantOption"
-                        onclick="selectDeliveryOption('restaurant')">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path
-                                d="M9 12v12M15 12v12M5 12l-2 9h18l-2-9M5 12V8c0-1.105.895-2 2-2h10c1.105 0 2 .895 2 2v4" />
-                            <circle cx="12" cy="6" r="2" />
-                        </svg>
-                        Restaurant
-                    </button>
-                    <button class="option-btn" id="homeDeliveryOption" onclick="selectDeliveryOption('home')">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path
-                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                        </svg>
-                        Home Delivery
-                    </button>
+            <!-- Distributor Section -->
+            <div class="distributor-section">
+                <h4 class="section-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                        <circle cx="8.5" cy="7" r="4"/>
+                        <path d="M20 8v6M23 11h-6"/>
+                    </svg>
+                    Distributor Information
+                </h4>
+                
+                <div class="checkbox-group" id="distributorCheckboxGroup">
+                    <div class="checkbox-input" id="distributorCheckbox"></div>
+                    <label class="checkbox-label" for="distributorCheckbox">Order from Distributor</label>
                 </div>
 
-                <!-- Restaurant Form -->
-                <div class="delivery-form active" id="restaurantForm">
+                <div class="distributor-mobile-container" id="distributorMobileContainer">
                     <div class="form-group">
-                        <label class="form-label" for="idNumber">Id Number</label>
-                        <input type="text" id="idNumber" class="form-input"
-                            placeholder="Enter Reference Id Number (e.g., Table 5, Booth 2)" />
+                        <label class="form-label" for="distributorMobile">Distributor Mobile Number</label>
+                        <input type="tel" id="distributorMobile" class="form-input" placeholder="Enter distributor mobile number" />
                     </div>
                 </div>
-
-                <!-- Home Delivery Form -->
-                <!-- <div class="delivery-form" id="homeDeliveryForm">
-                    <div class="form-group">
-                        <label class="form-label" for="customerName">Full Name</label>
-                        <input type="text" id="customerName" class="form-input" placeholder="Enter your full name" />
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="customerMobile">Mobile Number</label>
-                        <input type="tel" id="customerMobile" class="form-input"
-                            placeholder="Enter your mobile number" />
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="customerAddress">Delivery Address</label>
-                        <textarea id="customerAddress" class="form-input" placeholder="Enter your complete address"
-                            rows="3"></textarea>
-                    </div>
-                </div>
-            </div> -->
-
-            <!-- Customer Details Summary -->
-            <div class="customer-details-summary" id="customerDetailsSummary">
-                <!-- Will be populated by JavaScript -->
             </div>
 
             <div class="cart-items" id="cartItems">
@@ -1301,16 +1222,17 @@
     <script>
         // Menu Data
         const data = [
-          {"id": 315, "cat": "Ghanache Tel", "name": "मोहरी तेल (Mustard Oil)", "price": "TBD", "desc": "शुद्ध लाकडी घाण्याचे मोहरी तेल", "tags": ["Oil", "Cooking"], "img": "img/MustardOil.jpeg"},
-{"id": 316, "cat": "Ghanache Tel", "name": "शेंगदाणा तेल (Groundnut Oil)", "price": "TBD", "desc": "शुद्ध लाकडी घाण्याचे शेंगदाणा तेल", "tags": ["Oil", "Cooking"], "img": "img/GroundnutOil.jpeg"},
-{"id": 317, "cat": "Ghanache Tel", "name": "जवस तेल (Flaxseed Oil)", "price": "TBD", "desc": "शुद्ध लाकडी घाण्याचे जवस तेल", "tags": ["Oil", "Healthy"], "img": "img/FlaxseedOil.jpeg"},
-{"id": 318, "cat": "Ghanache Tel", "name": "तिळ तेल (Sesame Oil)", "price": "TBD", "desc": "शुद्ध लाकडी घाण्याचे तिळ तेल", "tags": ["Oil", "Cooking"], "img": "img/SesameOil.jpeg"},
-{"id": 319, "cat": "Ghanache Tel", "name": "बदाम तेल (Almond Oil)", "price": "TBD", "desc": "शुद्ध लाकडी घाण्याचे बदाम तेल", "tags": ["Oil", "Hair Care"], "img": "img/AlmondOil.jpeg"},
-{"id": 320, "cat": "Ghanache Tel", "name": "खोबरे तेल (Coconut Oil)", "price": "TBD", "desc": "शुद्ध लाकडी घाण्याचे खोबरे तेल", "tags": ["Oil", "Hair Care"], "img": "img/CoconutOil.jpeg"},
-      ];
+            {"id": 315, "cat": "Ghanache Tel", "name": "मोहरी तेल (Mustard Oil)", "price": "TBD", "desc": "शुद्ध लाकडी घाण्याचे मोहरी तेल", "tags": ["Oil", "Cooking"], "img": "img/MustardOil.jpeg"},
+            {"id": 316, "cat": "Ghanache Tel", "name": "शेंगदाणा तेल (Groundnut Oil)", "price": "TBD", "desc": "शुद्ध लाकडी घाण्याचे शेंगदाणा तेल", "tags": ["Oil", "Cooking"], "img": "img/GroundnutOil.jpeg"},
+            {"id": 317, "cat": "Ghanache Tel", "name": "जवस तेल (Flaxseed Oil)", "price": "TBD", "desc": "शुद्ध लाकडी घाण्याचे जवस तेल", "tags": ["Oil", "Healthy"], "img": "img/FlaxseedOil.jpeg"},
+            {"id": 318, "cat": "Ghanache Tel", "name": "तिळ तेल (Sesame Oil)", "price": "TBD", "desc": "शुद्ध लाकडी घाण्याचे तिळ तेल", "tags": ["Oil", "Cooking"], "img": "img/SesameOil.jpeg"},
+            {"id": 319, "cat": "Ghanache Tel", "name": "बदाम तेल (Almond Oil)", "price": "TBD", "desc": "शुद्ध लाकडी घाण्याचे बदाम तेल", "tags": ["Oil", "Hair Care"], "img": "img/AlmondOil.jpeg"},
+            {"id": 320, "cat": "Ghanache Tel", "name": "खोबरे तेल (Coconut Oil)", "price": "TBD", "desc": "शुद्ध लाकडी घाण्याचे खोबरे तेल", "tags": ["Oil", "Hair Care"], "img": "img/CoconutOil.jpeg"},
+        ];
+
         // Cart functionality
         let cart = [];
-        let deliveryType = 'restaurant'; // Default to restaurant
+        let isDistributor = false;
         const cartButton = document.getElementById('cartButton');
         const cartModal = document.getElementById('cartModal');
         const closeCart = document.getElementById('closeCart');
@@ -1321,84 +1243,30 @@
         const clearCart = document.getElementById('clearCart');
         const whatsappOrder = document.getElementById('whatsappOrder');
         const addAnotherItem = document.getElementById('addAnotherItem');
-        const customerDetailsSummary = document.getElementById('customerDetailsSummary');
+        const distributorCheckboxGroup = document.getElementById('distributorCheckboxGroup');
+        const distributorCheckbox = document.getElementById('distributorCheckbox');
+        const distributorMobileContainer = document.getElementById('distributorMobileContainer');
+        const distributorMobile = document.getElementById('distributorMobile');
 
-        // Delivery option selection
-        function selectDeliveryOption(type) {
-            deliveryType = type;
-
-            // Update button states
-            document.getElementById('restaurantOption').classList.toggle('active', type === 'restaurant');
-            document.getElementById('homeDeliveryOption').classList.toggle('active', type === 'home');
-
-            // Show/hide forms
-            document.getElementById('restaurantForm').classList.toggle('active', type === 'restaurant');
-            document.getElementById('homeDeliveryForm').classList.toggle('active', type === 'home');
-
-            // Update details summary
-            updateCustomerDetailsSummary();
-        }
-
-        // Update customer details summary
-        function updateCustomerDetailsSummary() {
-            let summaryHTML = '';
-            let showSummary = false;
-
-            if (deliveryType === 'restaurant') {
-                const idNumber = document.getElementById('idNumber').value.trim();
-
-                if (idNumber) {
-                    showSummary = true;
-                    summaryHTML = `
-            <div class="summary-title">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M9 12v12M15 12v12M5 12l-2 9h18l-2-9M5 12V8c0-1.105.895-2 2-2h10c1.105 0 2 .895 2 2v4"/>
-                <circle cx="12" cy="6" r="2"/>
-              </svg>
-              Restaurant Order
-            </div>
-            <div class="summary-details">
-              <div><strong>Type:</strong> Dine-in</div>
-              <div><strong>Id Number:</strong> ${idNumber}</div>
-            </div>
-          `;
-                }
+        // Toggle distributor checkbox
+        distributorCheckboxGroup.addEventListener('click', () => {
+            isDistributor = !isDistributor;
+            
+            if (isDistributor) {
+                distributorCheckbox.classList.add('checked');
+                distributorCheckbox.setAttribute('checked', 'true');
+                distributorMobileContainer.classList.add('show');
             } else {
-                const name = document.getElementById('customerName').value.trim();
-                const mobile = document.getElementById('customerMobile').value.trim();
-                const address = document.getElementById('customerAddress').value.trim();
-
-                if (name || mobile || address) {
-                    showSummary = true;
-                    summaryHTML = `
-            <div class="summary-title">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
-              </svg>
-              Delivery Order
-            </div>
-            <div class="summary-details">
-              <div><strong>Type:</strong> Home Delivery</div>
-              ${name ? `<div><strong>Name:</strong> ${name}</div>` : ''}
-              ${mobile ? `<div><strong>Mobile:</strong> ${mobile}</div>` : ''}
-              ${address ? `<div><strong>Address:</strong> ${address}</div>` : ''}
-            </div>
-          `;
-                }
+                distributorCheckbox.classList.remove('checked');
+                distributorCheckbox.removeAttribute('checked');
+                distributorMobileContainer.classList.remove('show');
+                distributorMobile.value = ''; // Clear the mobile number when unchecked
             }
-
-            if (showSummary) {
-                customerDetailsSummary.innerHTML = summaryHTML;
-                customerDetailsSummary.classList.add('active');
-            } else {
-                customerDetailsSummary.classList.remove('active');
-            }
-        }
+        });
 
         // Toggle cart modal
         cartButton.addEventListener('click', () => {
             cartModal.classList.add('open');
-            updateCustomerDetailsSummary();
         });
 
         closeCart.addEventListener('click', () => {
@@ -1476,7 +1344,7 @@
                 let totalAmount = 0;
 
                 cart.forEach(item => {
-                    const price = parseInt(item.price.replace('₹', ''));
+                    const price = parseInt(item.price.replace('₹', '')) || 0;
                     const itemTotal = price * item.quantity;
                     totalAmount += itemTotal;
 
@@ -1497,7 +1365,7 @@
                 });
 
                 cartItems.innerHTML = itemsHTML;
-                cartTotal.textContent = `₹${totalAmount}`;
+                cartTotal.textContent = totalAmount > 0 ? `₹${totalAmount}` : 'TBD';
             }
         }
 
@@ -1530,50 +1398,28 @@
                 return;
             }
 
-            // Validate details based on delivery type
-            let validationPassed = true;
-            let validationMessage = '';
-
-            if (deliveryType === 'restaurant') {
-                const idNumber = document.getElementById('idNumber').value.trim();
-
-                if (!idNumber) {
-                    validationPassed = false;
-                    validationMessage = 'Please enter Reference Id Number';
-                }
-            } else {
-                const customerName = document.getElementById('customerName').value.trim();
-                const customerMobile = document.getElementById('customerMobile').value.trim();
-                const customerAddress = document.getElementById('customerAddress').value.trim();
-
-                if (!customerName || !customerMobile || !customerAddress) {
-                    validationPassed = false;
-                    validationMessage = 'Please fill in all delivery details (Name, Mobile, Address)';
-                }
-            }
-
-            if (!validationPassed) {
-                alert(validationMessage);
+            // Get reference ID
+            const referenceId = document.getElementById('referenceId').value.trim();
+            
+            if (!referenceId) {
+                alert('Please enter your Reference ID');
                 return;
             }
 
             let message = `Hello! I would like to place an order:\n\n`;
 
-            // Add delivery details
-            if (deliveryType === 'restaurant') {
-                const idNumber = document.getElementById('idNumber').value.trim();
+            // Add reference ID
+            message += `**Reference ID:** ${referenceId}\n\n`;
 
-                message += `**Delivery Type:** Dine-in\n`;
-                message += `**Id Number:** ${idNumber}\n\n`;
+            // Add distributor information if checked
+            if (isDistributor) {
+                const distributorMobileNumber = distributorMobile.value.trim();
+                if (distributorMobileNumber) {
+                    message += `**Distributor Mobile:** ${distributorMobileNumber}\n`;
+                }
+                message += `**Order Type:** Distributor Order\n\n`;
             } else {
-                const customerName = document.getElementById('customerName').value.trim();
-                const customerMobile = document.getElementById('customerMobile').value.trim();
-                const customerAddress = document.getElementById('customerAddress').value.trim();
-
-                message += `**Delivery Type:** Home Delivery\n`;
-                message += `**Name:** ${customerName}\n`;
-                message += `**Mobile:** ${customerMobile}\n`;
-                message += `**Address:** ${customerAddress}\n\n`;
+                message += `**Order Type:** Direct Order\n\n`;
             }
 
             message += `**Order Details:**\n`;
@@ -1583,16 +1429,21 @@
             });
 
             const totalAmount = cart.reduce((sum, item) => {
-                const price = parseInt(item.price.replace('₹', ''));
+                const price = parseInt(item.price.replace('₹', '')) || 0;
                 return sum + (price * item.quantity);
             }, 0);
 
-            message += `\n**Total Amount:** ₹${totalAmount}\n\n`;
+            if (totalAmount > 0) {
+                message += `\n**Total Amount:** ₹${totalAmount}\n\n`;
+            } else {
+                message += `\n**Total Amount:** TBD\n\n`;
+            }
+
             message += `Thank you!`;
 
             // Encode the message for WhatsApp URL
             const encodedMessage = encodeURIComponent(message);
-            const whatsappURL = `https://wa.me/917843050115?text=${encodedMessage}`;
+            const whatsappURL = `https://wa.me/919284969878?text=${encodedMessage}`;
 
             // Open WhatsApp in a new tab
             window.open(whatsappURL, '_blank');
@@ -1656,9 +1507,6 @@
 
         // Initialize the page
         document.addEventListener('DOMContentLoaded', () => {
-            // Set default delivery option
-            selectDeliveryOption('restaurant');
-
             // Render menu items
             renderMenuItems(data);
 
@@ -1675,20 +1523,12 @@
             document.getElementById('search').addEventListener('input', (e) => {
                 searchItems(e.target.value);
             });
-
-            // Update details summary when form inputs change
-            document.getElementById('idNumber').addEventListener('input', updateCustomerDetailsSummary);
-            document.getElementById('customerName').addEventListener('input', updateCustomerDetailsSummary);
-            document.getElementById('customerMobile').addEventListener('input', updateCustomerDetailsSummary);
-            document.getElementById('customerAddress').addEventListener('input', updateCustomerDetailsSummary);
         });
 
         // Make functions available globally
         window.addToCart = addToCart;
         window.removeFromCart = removeFromCart;
         window.updateQuantity = updateQuantity;
-        window.selectDeliveryOption = selectDeliveryOption;
     </script>
 </body>
-
 </html>
