@@ -1227,41 +1227,149 @@
     <script>
         // Menu Data
         const data = [
-            {"id": 315, "cat": "Ghanache Tel", "name": "मोहरी तेल (Mustard Oil)", "price": "TBD", "desc": "शुद्ध लाकडी घाण्याचे मोहरी तेल", "tags": ["Oil", "Cooking"], "img": "img/MustardOil.jpg"},
-            {"id": 316, "cat": "Ghanache Tel", "name": "शेंगदाणा तेल (Groundnut Oil)", "price": "TBD", "desc": "शुद्ध लाकडी घाण्याचे शेंगदाणा तेल", "tags": ["Oil", "Cooking"], "img": "img/GroundnutOil.jpg"},
-            {"id": 317, "cat": "Ghanache Tel", "name": "जवस तेल (Flaxseed Oil)", "price": "TBD", "desc": "शुद्ध लाकडी घाण्याचे जवस तेल", "tags": ["Oil", "Healthy"], "img": "img/FlaxseedOil.jpg"},
-            {"id": 318, "cat": "Ghanache Tel", "name": "तिळ तेल (Sesame Oil)", "price": "TBD", "desc": "शुद्ध लाकडी घाण्याचे तिळ तेल", "tags": ["Oil", "Cooking"], "img": "img/SesameOil.jpg"},
-            {"id": 319, "cat": "Ghanache Tel", "name": "बदाम तेल (Almond Oil)", "price": "TBD", "desc": "शुद्ध लाकडी घाण्याचे बदाम तेल", "tags": ["Oil", "Hair Care"], "img": "img/AlmondOil.jpg"},
-            {"id": 320, "cat": "Ghanache Tel", "name": "खोबरे तेल (Coconut Oil)", "price": "TBD", "desc": "शुद्ध लाकडी घाण्याचे खोबरे तेल", "tags": ["Oil", "Hair Care"], "img": "img/CoconutOil.jpg"},
-            {"id": 321, "cat": "Ladu", "name": "मेथी लाडू (Methi Ladu)", "price": "TBD", "desc": "Healthy and traditional methi laddoo", "tags": ["Sweet", "Healthy"], "img": "img/MethiLadu.jpg"},
-{"id": 322, "cat": "Ladu", "name": "ड्रायफूट लाडू (Dry Fruit Ladu)", "price": "TBD", "desc": "Rich laddoo made with mixed dry fruits", "tags": ["Sweet", "Dry Fruit"], "img": "img/DryFruitLadu.jpg"},
-{"id": 323, "cat": "Ladu", "name": "काजू बदाम लाडू (Kaju Badam Ladu)", "price": "TBD", "desc": "Premium cashews and almonds laddoo", "tags": ["Sweet", "Dry Fruit"], "img": "img/KajuBadamLadu.jpg"},
-{"id": 324, "cat": "Ladu", "name": "गुड लाडू (Gul Ladu)", "price": "TBD", "desc": "Sweetened with natural jaggery", "tags": ["Sweet", "Healthy"], "img": "img/GulLadu.jpg"},
-{"id": 325, "cat": "Khada Masala", "name": "दालचिनी (Cinnamon)", "price": "TBD", "desc": "Whole cinnamon sticks", "tags": ["Spices", "Whole"], "img": "img/Cinnamon.jpg"},
-{"id": 326, "cat": "Khada Masala", "name": "लवंग (Clove)", "price": "TBD", "desc": "Premium whole cloves", "tags": ["Spices", "Whole"], "img": "img/Clove.jpg"},
-{"id": 327, "cat": "Khada Masala", "name": "विलायची (Cardamom)", "price": "TBD", "desc": "Green cardamom pods", "tags": ["Spices", "Whole"], "img": "img/Cardamom.jpg"},
-{"id": 328, "cat": "Khada Masala", "name": "तेजपत्ता (Bay Leaf)", "price": "TBD", "desc": "Dried aromatic bay leaves", "tags": ["Spices", "Whole"], "img": "img/BayLeaf.jpg"},
-{"id": 329, "cat": "Khada Masala", "name": "मिरे (Black Pepper)", "price": "TBD", "desc": "Whole black peppercorns", "tags": ["Spices", "Whole"], "img": "img/BlackPepper.jpg"},
-{"id": 330, "cat": "Khada Masala", "name": "जिरे (Cumin Seeds)", "price": "TBD", "desc": "Whole cumin seeds", "tags": ["Spices", "Whole"], "img": "img/Cumin.jpg"},
-{"id": 331, "cat": "Khada Masala", "name": "शहाजिरे (Shahi Jeera)", "price": "TBD", "desc": "Caraway seeds for premium flavor", "tags": ["Spices", "Whole"], "img": "img/ShahiJeera.jpg"},
-{"id": 332, "cat": "Chatni", "name": "खोबरे लसूण चटणी (Coconut Garlic Chatni)", "price": "TBD", "desc": "Spicy coconut and garlic blend", "tags": ["Side Dish", "Spicy"], "img": "img/CoconutGarlicChatni.jpg"},
-{"id": 333, "cat": "Chatni", "name": "तीळ चटणी (Sesame Chatni)", "price": "TBD", "desc": "Nutritious roasted sesame chutney", "tags": ["Side Dish", "Healthy"], "img": "img/SesameChatni.jpg"},
-{"id": 334, "cat": "Chatni", "name": "नारळ चटणी (Coconut Chatni)", "price": "TBD", "desc": "Fresh coconut chutney", "tags": ["Side Dish"], "img": "img/CoconutChatni.jpg"},
-{"id": 335, "cat": "Chatni", "name": "सोलापुरी शेंगदाणा चटणी (Solapuri Peanut Chatni)", "price": "TBD", "desc": "Famous Solapuri style peanut chutney", "tags": ["Side Dish", "Famous"], "img": "img/PeanutChatni.jpg"},
-{"id": 336, "cat": "Powder Masala", "name": "लाल मिर्च पावडर (Red Chilli Powder)", "price": "TBD", "desc": "Varieties: Teja, Bedgi, Guntur", "tags": ["Spices", "Powder"], "img": "img/RedChilliPowder.jpg"},
-{"id": 337, "cat": "Powder Masala", "name": "हळद पावडर (Turmeric Powder)", "price": "TBD", "desc": "Varieties: Shelam Special, Gavran", "tags": ["Spices", "Powder"], "img": "img/TurmericPowder.jpg"},
-{"id": 338, "cat": "Powder Masala", "name": "धने पावडर (Coriander Powder)", "price": "TBD", "desc": "Pure ground coriander seeds", "tags": ["Spices", "Powder"], "img": "img/CorianderPowder.jpg"},
-{"id": 339, "cat": "Powder Masala", "name": "काळा मसाला सोलापुरी (Solapuri Kala Masala)", "price": "TBD", "desc": "Traditional Solapuri black masala", "tags": ["Spices", "Powder"], "img": "img/SolapuriKalaMasala.jpg"},
-{"id": 340, "cat": "Powder Masala", "name": "काळा मसाला स्पेशल (Special Kala Masala)", "price": "TBD", "desc": "Premium blend of black spices", "tags": ["Spices", "Powder"], "img": "img/SpecialKalaMasala.jpg"},
-{"id": 341, "cat": "Powder Masala", "name": "कांदा लसूण मसाला (Kanda Lasun Masala)", "price": "TBD", "desc": "Authentic onion-garlic spice mix", "tags": ["Spices", "Powder"], "img": "img/KandaLasunMasala.jpg"},
-{"id": 342, "cat": "Lonche", "name": "आंब्याचे लोणचे (Mango Pickle)", "price": "TBD", "desc": "God (Sweet) & Tikhat (Spicy) Mango Pickle", "tags": ["Pickle", "Traditional"], "img": "img/MangoPickle.jpg"},
-{"id": 343, "cat": "Lonche", "name": "हळदीचे लोणचे (Turmeric Pickle)", "price": "TBD", "desc": "Fresh turmeric root pickle", "tags": ["Pickle", "Healthy"], "img": "img/TurmericPickle.jpg"},
-{"id": 344, "cat": "Lonche", "name": "लिंबू लोणचे (Lemon Pickle)", "price": "TBD", "desc": "God (Sweet) & Tikhat (Spicy) Lemon Pickle", "tags": ["Pickle"], "img": "img/LemonPickle.jpg"},
-{"id": 345, "cat": "Lonche", "name": "मिक्स लोणचे (Mix Pickle)", "price": "TBD", "desc": "Assorted vegetable pickle", "tags": ["Pickle"], "img": "img/MixPickle.jpg"},
-{"id": 346, "cat": "Lonche", "name": "मिरची लोणचे (Chilli Pickle)", "price": "TBD", "desc": "Spicy green chilli pickle", "tags": ["Pickle", "Spicy"], "img": "img/ChilliPickle.jpg"},
-        
-        
-        ];
+    {"id": 315001, "cat": "Ghanache Tel", "name": "मोहरी तेल (Mustard Oil)", "price": "TBD", "desc": "शुद्ध लाकडी घाण्याचे मोहरी तेल", "quantity": "100ml", "tags": ["Oil", "Cooking"], "img": "img/MustardOil.jpg"},
+    {"id": 315002, "cat": "Ghanache Tel", "name": "मोहरी तेल (Mustard Oil)", "price": "TBD", "desc": "शुद्ध लाकडी घाण्याचे मोहरी तेल", "quantity": "200ml", "tags": ["Oil", "Cooking"], "img": "img/MustardOil.jpg"},
+    {"id": 315003, "cat": "Ghanache Tel", "name": "मोहरी तेल (Mustard Oil)", "price": "TBD", "desc": "शुद्ध लाकडी घाण्याचे मोहरी तेल", "quantity": "500ml", "tags": ["Oil", "Cooking"], "img": "img/MustardOil.jpg"},
+    
+    {"id": 316001, "cat": "Ghanache Tel", "name": "शेंगदाणा तेल (Groundnut Oil)", "price": "TBD", "desc": "शुद्ध लाकडी घाण्याचे शेंगदाणा तेल", "quantity": "100ml", "tags": ["Oil", "Cooking"], "img": "img/GroundnutOil.jpg"},
+    {"id": 316002, "cat": "Ghanache Tel", "name": "शेंगदाणा तेल (Groundnut Oil)", "price": "TBD", "desc": "शुद्ध लाकडी घाण्याचे शेंगदाणा तेल", "quantity": "200ml", "tags": ["Oil", "Cooking"], "img": "img/GroundnutOil.jpg"},
+    {"id": 316003, "cat": "Ghanache Tel", "name": "शेंगदाणा तेल (Groundnut Oil)", "price": "TBD", "desc": "शुद्ध लाकडी घाण्याचे शेंगदाणा तेल", "quantity": "500ml", "tags": ["Oil", "Cooking"], "img": "img/GroundnutOil.jpg"},
+    
+    {"id": 317001, "cat": "Ghanache Tel", "name": "जवस तेल (Flaxseed Oil)", "price": "TBD", "desc": "शुद्ध लाकडी घाण्याचे जवस तेल", "quantity": "100ml", "tags": ["Oil", "Healthy"], "img": "img/FlaxseedOil.jpg"},
+    {"id": 317002, "cat": "Ghanache Tel", "name": "जवस तेल (Flaxseed Oil)", "price": "TBD", "desc": "शुद्ध लाकडी घाण्याचे जवस तेल", "quantity": "200ml", "tags": ["Oil", "Healthy"], "img": "img/FlaxseedOil.jpg"},
+    {"id": 317003, "cat": "Ghanache Tel", "name": "जवस तेल (Flaxseed Oil)", "price": "TBD", "desc": "शुद्ध लाकडी घाण्याचे जवस तेल", "quantity": "500ml", "tags": ["Oil", "Healthy"], "img": "img/FlaxseedOil.jpg"},
+    
+    {"id": 318001, "cat": "Ghanache Tel", "name": "तिळ तेल (Sesame Oil)", "price": "TBD", "desc": "शुद्ध लाकडी घाण्याचे तिळ तेल", "quantity": "100ml", "tags": ["Oil", "Cooking"], "img": "img/SesameOil.jpg"},
+    {"id": 318002, "cat": "Ghanache Tel", "name": "तिळ तेल (Sesame Oil)", "price": "TBD", "desc": "शुद्ध लाकडी घाण्याचे तिळ तेल", "quantity": "200ml", "tags": ["Oil", "Cooking"], "img": "img/SesameOil.jpg"},
+    {"id": 318003, "cat": "Ghanache Tel", "name": "तिळ तेल (Sesame Oil)", "price": "TBD", "desc": "शुद्ध लाकडी घाण्याचे तिळ तेल", "quantity": "500ml", "tags": ["Oil", "Cooking"], "img": "img/SesameOil.jpg"},
+    
+    {"id": 319001, "cat": "Ghanache Tel", "name": "बदाम तेल (Almond Oil)", "price": "TBD", "desc": "शुद्ध लाकडी घाण्याचे बदाम तेल", "quantity": "100ml", "tags": ["Oil", "Hair Care"], "img": "img/AlmondOil.jpg"},
+    {"id": 319002, "cat": "Ghanache Tel", "name": "बदाम तेल (Almond Oil)", "price": "TBD", "desc": "शुद्ध लाकडी घाण्याचे बदाम तेल", "quantity": "200ml", "tags": ["Oil", "Hair Care"], "img": "img/AlmondOil.jpg"},
+    {"id": 319003, "cat": "Ghanache Tel", "name": "बदाम तेल (Almond Oil)", "price": "TBD", "desc": "शुद्ध लाकडी घाण्याचे बदाम तेल", "quantity": "500ml", "tags": ["Oil", "Hair Care"], "img": "img/AlmondOil.jpg"},
+    
+    {"id": 320001, "cat": "Ghanache Tel", "name": "खोबरे तेल (Coconut Oil)", "price": "TBD", "desc": "शुद्ध लाकडी घाण्याचे खोबरे तेल", "quantity": "100ml", "tags": ["Oil", "Hair Care"], "img": "img/CoconutOil.jpg"},
+    {"id": 320002, "cat": "Ghanache Tel", "name": "खोबरे तेल (Coconut Oil)", "price": "TBD", "desc": "शुद्ध लाकडी घाण्याचे खोबरे तेल", "quantity": "200ml", "tags": ["Oil", "Hair Care"], "img": "img/CoconutOil.jpg"},
+    {"id": 320003, "cat": "Ghanache Tel", "name": "खोबरे तेल (Coconut Oil)", "price": "TBD", "desc": "शुद्ध लाकडी घाण्याचे खोबरे तेल", "quantity": "500ml", "tags": ["Oil", "Hair Care"], "img": "img/CoconutOil.jpg"},
+    
+    {"id": 321001, "cat": "Ladu", "name": "मेथी लाडू (Methi Ladu)", "price": "TBD", "desc": "Healthy and traditional methi laddoo", "quantity": "100g", "tags": ["Sweet", "Healthy"], "img": "img/MethiLadu.jpg"},
+    {"id": 321002, "cat": "Ladu", "name": "मेथी लाडू (Methi Ladu)", "price": "TBD", "desc": "Healthy and traditional methi laddoo", "quantity": "200g", "tags": ["Sweet", "Healthy"], "img": "img/MethiLadu.jpg"},
+    {"id": 321003, "cat": "Ladu", "name": "मेथी लाडू (Methi Ladu)", "price": "TBD", "desc": "Healthy and traditional methi laddoo", "quantity": "500g", "tags": ["Sweet", "Healthy"], "img": "img/MethiLadu.jpg"},
+    
+    {"id": 322001, "cat": "Ladu", "name": "ड्रायफूट लाडू (Dry Fruit Ladu)", "price": "TBD", "desc": "Rich laddoo made with mixed dry fruits", "quantity": "100g", "tags": ["Sweet", "Dry Fruit"], "img": "img/DryFruitLadu.jpg"},
+    {"id": 322002, "cat": "Ladu", "name": "ड्रायफूट लाडू (Dry Fruit Ladu)", "price": "TBD", "desc": "Rich laddoo made with mixed dry fruits", "quantity": "200g", "tags": ["Sweet", "Dry Fruit"], "img": "img/DryFruitLadu.jpg"},
+    {"id": 322003, "cat": "Ladu", "name": "ड्रायफूट लाडू (Dry Fruit Ladu)", "price": "TBD", "desc": "Rich laddoo made with mixed dry fruits", "quantity": "500g", "tags": ["Sweet", "Dry Fruit"], "img": "img/DryFruitLadu.jpg"},
+    
+    {"id": 323001, "cat": "Ladu", "name": "काजू बदाम लाडू (Kaju Badam Ladu)", "price": "TBD", "desc": "Premium cashews and almonds laddoo", "quantity": "100g", "tags": ["Sweet", "Dry Fruit"], "img": "img/KajuBadamLadu.jpg"},
+    {"id": 323002, "cat": "Ladu", "name": "काजू बदाम लाडू (Kaju Badam Ladu)", "price": "TBD", "desc": "Premium cashews and almonds laddoo", "quantity": "200g", "tags": ["Sweet", "Dry Fruit"], "img": "img/KajuBadamLadu.jpg"},
+    {"id": 323003, "cat": "Ladu", "name": "काजू बदाम लाडू (Kaju Badam Ladu)", "price": "TBD", "desc": "Premium cashews and almonds laddoo", "quantity": "500g", "tags": ["Sweet", "Dry Fruit"], "img": "img/KajuBadamLadu.jpg"},
+    
+    {"id": 324001, "cat": "Ladu", "name": "गुड लाडू (Gul Ladu)", "price": "TBD", "desc": "Sweetened with natural jaggery", "quantity": "100g", "tags": ["Sweet", "Healthy"], "img": "img/GulLadu.jpg"},
+    {"id": 324002, "cat": "Ladu", "name": "गुड लाडू (Gul Ladu)", "price": "TBD", "desc": "Sweetened with natural jaggery", "quantity": "200g", "tags": ["Sweet", "Healthy"], "img": "img/GulLadu.jpg"},
+    {"id": 324003, "cat": "Ladu", "name": "गुड लाडू (Gul Ladu)", "price": "TBD", "desc": "Sweetened with natural jaggery", "quantity": "500g", "tags": ["Sweet", "Healthy"], "img": "img/GulLadu.jpg"},
+    
+    {"id": 325001, "cat": "Khada Masala", "name": "दालचिनी (Cinnamon)", "price": "TBD", "desc": "Whole cinnamon sticks", "quantity": "100g", "tags": ["Spices", "Whole"], "img": "img/Cinnamon.jpg"},
+    {"id": 325002, "cat": "Khada Masala", "name": "दालचिनी (Cinnamon)", "price": "TBD", "desc": "Whole cinnamon sticks", "quantity": "200g", "tags": ["Spices", "Whole"], "img": "img/Cinnamon.jpg"},
+    {"id": 325003, "cat": "Khada Masala", "name": "दालचिनी (Cinnamon)", "price": "TBD", "desc": "Whole cinnamon sticks", "quantity": "500g", "tags": ["Spices", "Whole"], "img": "img/Cinnamon.jpg"},
+    
+    {"id": 326001, "cat": "Khada Masala", "name": "लवंग (Clove)", "price": "TBD", "desc": "Premium whole cloves", "quantity": "100g", "tags": ["Spices", "Whole"], "img": "img/Clove.jpg"},
+    {"id": 326002, "cat": "Khada Masala", "name": "लवंग (Clove)", "price": "TBD", "desc": "Premium whole cloves", "quantity": "200g", "tags": ["Spices", "Whole"], "img": "img/Clove.jpg"},
+    {"id": 326003, "cat": "Khada Masala", "name": "लवंग (Clove)", "price": "TBD", "desc": "Premium whole cloves", "quantity": "500g", "tags": ["Spices", "Whole"], "img": "img/Clove.jpg"},
+    
+    {"id": 327001, "cat": "Khada Masala", "name": "विलायची (Cardamom)", "price": "TBD", "desc": "Green cardamom pods", "quantity": "100g", "tags": ["Spices", "Whole"], "img": "img/Cardamom.jpg"},
+    {"id": 327002, "cat": "Khada Masala", "name": "विलायची (Cardamom)", "price": "TBD", "desc": "Green cardamom pods", "quantity": "200g", "tags": ["Spices", "Whole"], "img": "img/Cardamom.jpg"},
+    {"id": 327003, "cat": "Khada Masala", "name": "विलायची (Cardamom)", "price": "TBD", "desc": "Green cardamom pods", "quantity": "500g", "tags": ["Spices", "Whole"], "img": "img/Cardamom.jpg"},
+    
+    {"id": 328001, "cat": "Khada Masala", "name": "तेजपत्ता (Bay Leaf)", "price": "TBD", "desc": "Dried aromatic bay leaves", "quantity": "100g", "tags": ["Spices", "Whole"], "img": "img/BayLeaf.jpg"},
+    {"id": 328002, "cat": "Khada Masala", "name": "तेजपत्ता (Bay Leaf)", "price": "TBD", "desc": "Dried aromatic bay leaves", "quantity": "200g", "tags": ["Spices", "Whole"], "img": "img/BayLeaf.jpg"},
+    {"id": 328003, "cat": "Khada Masala", "name": "तेजपत्ता (Bay Leaf)", "price": "TBD", "desc": "Dried aromatic bay leaves", "quantity": "500g", "tags": ["Spices", "Whole"], "img": "img/BayLeaf.jpg"},
+    
+    {"id": 329001, "cat": "Khada Masala", "name": "मिरे (Black Pepper)", "price": "TBD", "desc": "Whole black peppercorns", "quantity": "100g", "tags": ["Spices", "Whole"], "img": "img/BlackPepper.jpg"},
+    {"id": 329002, "cat": "Khada Masala", "name": "मिरे (Black Pepper)", "price": "TBD", "desc": "Whole black peppercorns", "quantity": "200g", "tags": ["Spices", "Whole"], "img": "img/BlackPepper.jpg"},
+    {"id": 329003, "cat": "Khada Masala", "name": "मिरे (Black Pepper)", "price": "TBD", "desc": "Whole black peppercorns", "quantity": "500g", "tags": ["Spices", "Whole"], "img": "img/BlackPepper.jpg"},
+    
+    {"id": 330001, "cat": "Khada Masala", "name": "जिरे (Cumin Seeds)", "price": "TBD", "desc": "Whole cumin seeds", "quantity": "100g", "tags": ["Spices", "Whole"], "img": "img/Cumin.jpg"},
+    {"id": 330002, "cat": "Khada Masala", "name": "जिरे (Cumin Seeds)", "price": "TBD", "desc": "Whole cumin seeds", "quantity": "200g", "tags": ["Spices", "Whole"], "img": "img/Cumin.jpg"},
+    {"id": 330003, "cat": "Khada Masala", "name": "जिरे (Cumin Seeds)", "price": "TBD", "desc": "Whole cumin seeds", "quantity": "500g", "tags": ["Spices", "Whole"], "img": "img/Cumin.jpg"},
+    
+    {"id": 331001, "cat": "Khada Masala", "name": "शहाजिरे (Shahi Jeera)", "price": "TBD", "desc": "Caraway seeds for premium flavor", "quantity": "100g", "tags": ["Spices", "Whole"], "img": "img/ShahiJeera.jpg"},
+    {"id": 331002, "cat": "Khada Masala", "name": "शहाजिरे (Shahi Jeera)", "price": "TBD", "desc": "Caraway seeds for premium flavor", "quantity": "200g", "tags": ["Spices", "Whole"], "img": "img/ShahiJeera.jpg"},
+    {"id": 331003, "cat": "Khada Masala", "name": "शहाजिरे (Shahi Jeera)", "price": "TBD", "desc": "Caraway seeds for premium flavor", "quantity": "500g", "tags": ["Spices", "Whole"], "img": "img/ShahiJeera.jpg"},
+    
+    {"id": 332001, "cat": "Chatni", "name": "खोबरे लसूण चटणी (Coconut Garlic Chatni)", "price": "TBD", "desc": "Spicy coconut and garlic blend", "quantity": "100g", "tags": ["Side Dish", "Spicy"], "img": "img/CoconutGarlicChatni.jpg"},
+    {"id": 332002, "cat": "Chatni", "name": "खोबरे लसूण चटणी (Coconut Garlic Chatni)", "price": "TBD", "desc": "Spicy coconut and garlic blend", "quantity": "200g", "tags": ["Side Dish", "Spicy"], "img": "img/CoconutGarlicChatni.jpg"},
+    {"id": 332003, "cat": "Chatni", "name": "खोबरे लसूण चटणी (Coconut Garlic Chatni)", "price": "TBD", "desc": "Spicy coconut and garlic blend", "quantity": "500g", "tags": ["Side Dish", "Spicy"], "img": "img/CoconutGarlicChatni.jpg"},
+    
+    {"id": 333001, "cat": "Chatni", "name": "तीळ चटणी (Sesame Chatni)", "price": "TBD", "desc": "Nutritious roasted sesame chutney", "quantity": "100g", "tags": ["Side Dish", "Healthy"], "img": "img/SesameChatni.jpg"},
+    {"id": 333002, "cat": "Chatni", "name": "तीळ चटणी (Sesame Chatni)", "price": "TBD", "desc": "Nutritious roasted sesame chutney", "quantity": "200g", "tags": ["Side Dish", "Healthy"], "img": "img/SesameChatni.jpg"},
+    {"id": 333003, "cat": "Chatni", "name": "तीळ चटणी (Sesame Chatni)", "price": "TBD", "desc": "Nutritious roasted sesame chutney", "quantity": "500g", "tags": ["Side Dish", "Healthy"], "img": "img/SesameChatni.jpg"},
+    
+    {"id": 334001, "cat": "Chatni", "name": "नारळ चटणी (Coconut Chatni)", "price": "TBD", "desc": "Fresh coconut chutney", "quantity": "100g", "tags": ["Side Dish"], "img": "img/CoconutChatni.jpg"},
+    {"id": 334002, "cat": "Chatni", "name": "नारळ चटणी (Coconut Chatni)", "price": "TBD", "desc": "Fresh coconut chutney", "quantity": "200g", "tags": ["Side Dish"], "img": "img/CoconutChatni.jpg"},
+    {"id": 334003, "cat": "Chatni", "name": "नारळ चटणी (Coconut Chatni)", "price": "TBD", "desc": "Fresh coconut chutney", "quantity": "500g", "tags": ["Side Dish"], "img": "img/CoconutChatni.jpg"},
+    
+    {"id": 335001, "cat": "Chatni", "name": "सोलापुरी शेंगदाणा चटणी (Solapuri Peanut Chatni)", "price": "TBD", "desc": "Famous Solapuri style peanut chutney", "quantity": "100g", "tags": ["Side Dish", "Famous"], "img": "img/PeanutChatni.jpg"},
+    {"id": 335002, "cat": "Chatni", "name": "सोलापुरी शेंगदाणा चटणी (Solapuri Peanut Chatni)", "price": "TBD", "desc": "Famous Solapuri style peanut chutney", "quantity": "200g", "tags": ["Side Dish", "Famous"], "img": "img/PeanutChatni.jpg"},
+    {"id": 335003, "cat": "Chatni", "name": "सोलापुरी शेंगदाणा चटणी (Solapuri Peanut Chatni)", "price": "TBD", "desc": "Famous Solapuri style peanut chutney", "quantity": "500g", "tags": ["Side Dish", "Famous"], "img": "img/PeanutChatni.jpg"},
+    
+    {"id": 336001, "cat": "Powder Masala", "name": "लाल मिर्च पावडर - तेजा (Red Chilli Powder - Teja)", "price": "TBD", "desc": "Teja variety red chilli powder", "quantity": "100g", "tags": ["Spices", "Powder"], "img": "img/RedChilliPowder.jpg"},
+    {"id": 336002, "cat": "Powder Masala", "name": "लाल मिर्च पावडर - तेजा (Red Chilli Powder - Teja)", "price": "TBD", "desc": "Teja variety red chilli powder", "quantity": "200g", "tags": ["Spices", "Powder"], "img": "img/RedChilliPowder.jpg"},
+    {"id": 336003, "cat": "Powder Masala", "name": "लाल मिर्च पावडर - तेजा (Red Chilli Powder - Teja)", "price": "TBD", "desc": "Teja variety red chilli powder", "quantity": "500g", "tags": ["Spices", "Powder"], "img": "img/RedChilliPowder.jpg"},
+    {"id": 336004, "cat": "Powder Masala", "name": "लाल मिर्च पावडर - बेदगी (Red Chilli Powder - Bedgi)", "price": "TBD", "desc": "Bedgi variety red chilli powder", "quantity": "100g", "tags": ["Spices", "Powder"], "img": "img/RedChilliPowder.jpg"},
+    {"id": 336005, "cat": "Powder Masala", "name": "लाल मिर्च पावडर - बेदगी (Red Chilli Powder - Bedgi)", "price": "TBD", "desc": "Bedgi variety red chilli powder", "quantity": "200g", "tags": ["Spices", "Powder"], "img": "img/RedChilliPowder.jpg"},
+    {"id": 336006, "cat": "Powder Masala", "name": "लाल मिर्च पावडर - बेदगी (Red Chilli Powder - Bedgi)", "price": "TBD", "desc": "Bedgi variety red chilli powder", "quantity": "500g", "tags": ["Spices", "Powder"], "img": "img/RedChilliPowder.jpg"},
+    {"id": 336007, "cat": "Powder Masala", "name": "लाल मिर्च पावडर - गुंटूर (Red Chilli Powder - Guntur)", "price": "TBD", "desc": "Guntur variety red chilli powder", "quantity": "100g", "tags": ["Spices", "Powder"], "img": "img/RedChilliPowder.jpg"},
+    {"id": 336008, "cat": "Powder Masala", "name": "लाल मिर्च पावडर - गुंटूर (Red Chilli Powder - Guntur)", "price": "TBD", "desc": "Guntur variety red chilli powder", "quantity": "200g", "tags": ["Spices", "Powder"], "img": "img/RedChilliPowder.jpg"},
+    {"id": 336009, "cat": "Powder Masala", "name": "लाल मिर्च पावडर - गुंटूर (Red Chilli Powder - Guntur)", "price": "TBD", "desc": "Guntur variety red chilli powder", "quantity": "500g", "tags": ["Spices", "Powder"], "img": "img/RedChilliPowder.jpg"},
+    
+    {"id": 337001, "cat": "Powder Masala", "name": "हळद पावडर - शेलाम स्पेशल (Turmeric Powder - Shelam Special)", "price": "TBD", "desc": "Premium Shelam Special turmeric powder", "quantity": "100g", "tags": ["Spices", "Powder"], "img": "img/TurmericPowder.jpg"},
+    {"id": 337002, "cat": "Powder Masala", "name": "हळद पावडर - शेलाम स्पेशल (Turmeric Powder - Shelam Special)", "price": "TBD", "desc": "Premium Shelam Special turmeric powder", "quantity": "200g", "tags": ["Spices", "Powder"], "img": "img/TurmericPowder.jpg"},
+    {"id": 337003, "cat": "Powder Masala", "name": "हळद पावडर - शेलाम स्पेशल (Turmeric Powder - Shelam Special)", "price": "TBD", "desc": "Premium Shelam Special turmeric powder", "quantity": "500g", "tags": ["Spices", "Powder"], "img": "img/TurmericPowder.jpg"},
+    {"id": 337004, "cat": "Powder Masala", "name": "हळद पावडर - गावरान (Turmeric Powder - Gavran)", "price": "TBD", "desc": "Traditional Gavran turmeric powder", "quantity": "100g", "tags": ["Spices", "Powder"], "img": "img/TurmericPowder.jpg"},
+    {"id": 337005, "cat": "Powder Masala", "name": "हळद पावडर - गावरान (Turmeric Powder - Gavran)", "price": "TBD", "desc": "Traditional Gavran turmeric powder", "quantity": "200g", "tags": ["Spices", "Powder"], "img": "img/TurmericPowder.jpg"},
+    {"id": 337006, "cat": "Powder Masala", "name": "हळद पावडर - गावरान (Turmeric Powder - Gavran)", "price": "TBD", "desc": "Traditional Gavran turmeric powder", "quantity": "500g", "tags": ["Spices", "Powder"], "img": "img/TurmericPowder.jpg"},
+    
+    {"id": 338001, "cat": "Powder Masala", "name": "धने पावडर (Coriander Powder)", "price": "TBD", "desc": "Pure ground coriander seeds", "quantity": "100g", "tags": ["Spices", "Powder"], "img": "img/CorianderPowder.jpg"},
+    {"id": 338002, "cat": "Powder Masala", "name": "धने पावडर (Coriander Powder)", "price": "TBD", "desc": "Pure ground coriander seeds", "quantity": "200g", "tags": ["Spices", "Powder"], "img": "img/CorianderPowder.jpg"},
+    {"id": 338003, "cat": "Powder Masala", "name": "धने पावडर (Coriander Powder)", "price": "TBD", "desc": "Pure ground coriander seeds", "quantity": "500g", "tags": ["Spices", "Powder"], "img": "img/CorianderPowder.jpg"},
+    
+    {"id": 339001, "cat": "Powder Masala", "name": "काळा मसाला सोलापुरी (Solapuri Kala Masala)", "price": "TBD", "desc": "Traditional Solapuri black masala", "quantity": "100g", "tags": ["Spices", "Powder"], "img": "img/SolapuriKalaMasala.jpg"},
+    {"id": 339002, "cat": "Powder Masala", "name": "काळा मसाला सोलापुरी (Solapuri Kala Masala)", "price": "TBD", "desc": "Traditional Solapuri black masala", "quantity": "200g", "tags": ["Spices", "Powder"], "img": "img/SolapuriKalaMasala.jpg"},
+    {"id": 339003, "cat": "Powder Masala", "name": "काळा मसाला सोलापुरी (Solapuri Kala Masala)", "price": "TBD", "desc": "Traditional Solapuri black masala", "quantity": "500g", "tags": ["Spices", "Powder"], "img": "img/SolapuriKalaMasala.jpg"},
+    
+    {"id": 340001, "cat": "Powder Masala", "name": "काळा मसाला स्पेशल (Special Kala Masala)", "price": "TBD", "desc": "Premium blend of black spices", "quantity": "100g", "tags": ["Spices", "Powder"], "img": "img/SpecialKalaMasala.jpg"},
+    {"id": 340002, "cat": "Powder Masala", "name": "काळा मसाला स्पेशल (Special Kala Masala)", "price": "TBD", "desc": "Premium blend of black spices", "quantity": "200g", "tags": ["Spices", "Powder"], "img": "img/SpecialKalaMasala.jpg"},
+    {"id": 340003, "cat": "Powder Masala", "name": "काळा मसाला स्पेशल (Special Kala Masala)", "price": "TBD", "desc": "Premium blend of black spices", "quantity": "500g", "tags": ["Spices", "Powder"], "img": "img/SpecialKalaMasala.jpg"},
+    
+    {"id": 341001, "cat": "Powder Masala", "name": "कांदा लसूण मसाला (Kanda Lasun Masala)", "price": "TBD", "desc": "Authentic onion-garlic spice mix", "quantity": "100g", "tags": ["Spices", "Powder"], "img": "img/KandaLasunMasala.jpg"},
+    {"id": 341002, "cat": "Powder Masala", "name": "कांदा लसूण मसाला (Kanda Lasun Masala)", "price": "TBD", "desc": "Authentic onion-garlic spice mix", "quantity": "200g", "tags": ["Spices", "Powder"], "img": "img/KandaLasunMasala.jpg"},
+    {"id": 341003, "cat": "Powder Masala", "name": "कांदा लसूण मसाला (Kanda Lasun Masala)", "price": "TBD", "desc": "Authentic onion-garlic spice mix", "quantity": "500g", "tags": ["Spices", "Powder"], "img": "img/KandaLasunMasala.jpg"},
+    
+    {"id": 342001, "cat": "Lonche", "name": "आंब्याचे लोणचे - गोड (Mango Pickle - Sweet)", "price": "TBD", "desc": "Sweet Mango Pickle", "quantity": "100g", "tags": ["Pickle", "Traditional"], "img": "img/MangoPickle.jpg"},
+    {"id": 342002, "cat": "Lonche", "name": "आंब्याचे लोणचे - गोड (Mango Pickle - Sweet)", "price": "TBD", "desc": "Sweet Mango Pickle", "quantity": "200g", "tags": ["Pickle", "Traditional"], "img": "img/MangoPickle.jpg"},
+    {"id": 342003, "cat": "Lonche", "name": "आंब्याचे लोणचे - गोड (Mango Pickle - Sweet)", "price": "TBD", "desc": "Sweet Mango Pickle", "quantity": "500g", "tags": ["Pickle", "Traditional"], "img": "img/MangoPickle.jpg"},
+    {"id": 342004, "cat": "Lonche", "name": "आंब्याचे लोणचे - तिखट (Mango Pickle - Spicy)", "price": "TBD", "desc": "Spicy Mango Pickle", "quantity": "100g", "tags": ["Pickle", "Traditional"], "img": "img/MangoPickle.jpg"},
+    {"id": 342005, "cat": "Lonche", "name": "आंब्याचे लोणचे - तिखट (Mango Pickle - Spicy)", "price": "TBD", "desc": "Spicy Mango Pickle", "quantity": "200g", "tags": ["Pickle", "Traditional"], "img": "img/MangoPickle.jpg"},
+    {"id": 342006, "cat": "Lonche", "name": "आंब्याचे लोणचे - तिखट (Mango Pickle - Spicy)", "price": "TBD", "desc": "Spicy Mango Pickle", "quantity": "500g", "tags": ["Pickle", "Traditional"], "img": "img/MangoPickle.jpg"},
+    
+    {"id": 343001, "cat": "Lonche", "name": "हळदीचे लोणचे (Turmeric Pickle)", "price": "TBD", "desc": "Fresh turmeric root pickle", "quantity": "100g", "tags": ["Pickle", "Healthy"], "img": "img/TurmericPickle.jpg"},
+    {"id": 343002, "cat": "Lonche", "name": "हळदीचे लोणचे (Turmeric Pickle)", "price": "TBD", "desc": "Fresh turmeric root pickle", "quantity": "200g", "tags": ["Pickle", "Healthy"], "img": "img/TurmericPickle.jpg"},
+    {"id": 343003, "cat": "Lonche", "name": "हळदीचे लोणचे (Turmeric Pickle)", "price": "TBD", "desc": "Fresh turmeric root pickle", "quantity": "500g", "tags": ["Pickle", "Healthy"], "img": "img/TurmericPickle.jpg"},
+    
+    {"id": 344001, "cat": "Lonche", "name": "लिंबू लोणचे - गोड (Lemon Pickle - Sweet)", "price": "TBD", "desc": "Sweet Lemon Pickle", "quantity": "100g", "tags": ["Pickle"], "img": "img/LemonPickle.jpg"},
+    {"id": 344002, "cat": "Lonche", "name": "लिंबू लोणचे - गोड (Lemon Pickle - Sweet)", "price": "TBD", "desc": "Sweet Lemon Pickle", "quantity": "200g", "tags": ["Pickle"], "img": "img/LemonPickle.jpg"},
+    {"id": 344003, "cat": "Lonche", "name": "लिंबू लोणचे - गोड (Lemon Pickle - Sweet)", "price": "TBD", "desc": "Sweet Lemon Pickle", "quantity": "500g", "tags": ["Pickle"], "img": "img/LemonPickle.jpg"},
+    {"id": 344004, "cat": "Lonche", "name": "लिंबू लोणचे - तिखट (Lemon Pickle - Spicy)", "price": "TBD", "desc": "Spicy Lemon Pickle", "quantity": "100g", "tags": ["Pickle"], "img": "img/LemonPickle.jpg"},
+    {"id": 344005, "cat": "Lonche", "name": "लिंबू लोणचे - तिखट (Lemon Pickle - Spicy)", "price": "TBD", "desc": "Spicy Lemon Pickle", "quantity": "200g", "tags": ["Pickle"], "img": "img/LemonPickle.jpg"},
+    {"id": 344006, "cat": "Lonche", "name": "लिंबू लोणचे - तिखट (Lemon Pickle - Spicy)", "price": "TBD", "desc": "Spicy Lemon Pickle", "quantity": "500g", "tags": ["Pickle"], "img": "img/LemonPickle.jpg"},
+    
+    {"id": 345001, "cat": "Lonche", "name": "मिक्स लोणचे (Mix Pickle)", "price": "TBD", "desc": "Assorted vegetable pickle", "quantity": "100g", "tags": ["Pickle"], "img": "img/MixPickle.jpg"},
+    {"id": 345002, "cat": "Lonche", "name": "मिक्स लोणचे (Mix Pickle)", "price": "TBD", "desc": "Assorted vegetable pickle", "quantity": "200g", "tags": ["Pickle"], "img": "img/MixPickle.jpg"},
+    {"id": 345003, "cat": "Lonche", "name": "मिक्स लोणचे (Mix Pickle)", "price": "TBD", "desc": "Assorted vegetable pickle", "quantity": "500g", "tags": ["Pickle"], "img": "img/MixPickle.jpg"},
+    
+    {"id": 346001, "cat": "Lonche", "name": "मिरची लोणचे (Chilli Pickle)", "price": "TBD", "desc": "Spicy green chilli pickle", "quantity": "100g", "tags": ["Pickle", "Spicy"], "img": "img/ChilliPickle.jpg"},
+    {"id": 346002, "cat": "Lonche", "name": "मिरची लोणचे (Chilli Pickle)", "price": "TBD", "desc": "Spicy green chilli pickle", "quantity": "200g", "tags": ["Pickle", "Spicy"], "img": "img/ChilliPickle.jpg"},
+    {"id": 346003, "cat": "Lonche", "name": "मिरची लोणचे (Chilli Pickle)", "price": "TBD", "desc": "Spicy green chilli pickle", "quantity": "500g", "tags": ["Pickle", "Spicy"], "img": "img/ChilliPickle.jpg"}
+];
 
         // Cart functionality
         let cart = [];
